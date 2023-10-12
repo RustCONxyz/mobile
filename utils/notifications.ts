@@ -1,12 +1,10 @@
 import { getNotificationSettings } from "./storage/notifications";
 
-const API_URL = "https://api.rustcon.xyz/push-token";
-
 export async function registerPushToken(token: string, platform: string, platformVersion: string) {
 
     const notificationSettings = await getNotificationSettings();
 
-    const response = await fetch(API_URL, {
+    const response = await fetch(`${process.env.EXPO_PUBLIC_API_URL}/push-token`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
