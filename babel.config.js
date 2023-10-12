@@ -7,7 +7,7 @@ module.exports = function (api) {
         presets: ["babel-preset-expo"],
 
         plugins: [
-            require.resolve("expo-router/babel"),
+            "expo-router/babel",
             "nativewind/babel",
             "react-native-reanimated/plugin"
         ]

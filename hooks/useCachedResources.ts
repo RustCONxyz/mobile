@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { SplashScreen } from "expo-router";
 
 export default function useCachedResources() {
 
@@ -17,6 +18,8 @@ export default function useCachedResources() {
                 console.error(error);
 
             } finally {
+
+                SplashScreen.hideAsync();
 
                 setLoadingComplete(true);
 

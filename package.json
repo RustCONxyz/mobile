@@ -4,6 +4,7 @@
   "description": "RustCON - Mobile App",
   "license": "GNU GPLv3",
   "author": "Kopter",
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",

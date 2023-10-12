@@ -11,11 +11,7 @@ import useCachedResources from "../hooks/useCachedResources";
 
 import RouteRedirect from "../components/RouteRedirect";
 
-export const unstable_settings = {
-
-    initialRouteName: "(auth)/index"
-
-}
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
 
@@ -26,7 +22,6 @@ export default function RootLayout() {
     return (
         <ReduxProvider store={store}>
             <StatusBar style="light" />
-            {!isLoadingComplete && <SplashScreen />}
             <RouteRedirect>
                 <SafeAreaView className="h-full">
                     <Stack initialRouteName="(auth)/index">
