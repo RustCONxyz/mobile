@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "EditorConfig.EditorConfig",
+    "expo.vscode-expo-tools",
+    "msjsdiag.vscode-react-native"
+  ]
+}

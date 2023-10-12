@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "RustCON",
+    "owner": "kopter",
+    "slug": "rustcon",
+    "version": "0.1.0-beta",
+    "githubUrl": "https://github.com/RustCONxyz/mobile",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a0a"
+    },
+    "androidStatusBar": {
+      "barStyle": "light-content"
+    },
+    "androidNavigationBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#0a0a0a"
+    },
+    "backgroundColor": "#0a0a0a",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "xyz.rustcon.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0a0a0a"
+      },
+      "package": "xyz.rustcon.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "309b0a43-07c5-4218-91af-a414b1d98fdb"
+      }
+    }
+  }
+}
