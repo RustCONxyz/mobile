@@ -68,7 +68,7 @@ export default function SettingsScreen() {
                 </View>
                 <View>
                     <Text className="text-center">RustCON is an open source project</Text>
-                    <Text className="mt-2 mb-8 text-xs text-center">{Constants.manifest?.version ?? "Unknown Version"}</Text>
+                    <Text className="mt-2 mb-8 text-xs text-center">{Constants.expoConfig?.version ?? "Unknown Version"}</Text>
                 </View>
             </View>
         </ScrollView>
