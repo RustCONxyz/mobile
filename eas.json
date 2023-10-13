@@ -15,6 +15,9 @@
     },
     "preview": {
       "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api.rustcon.xyz"
+      },
       "ios": {
         "resourceClass": "m-medium"
       },
@@ -23,6 +26,9 @@
       }
     },
     "production": {
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api.rustcon.xyz"
+      },
       "ios": {
         "resourceClass": "m-medium"
       }
