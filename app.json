@@ -3,7 +3,7 @@
     "name": "RustCON",
     "owner": "kopter",
     "slug": "rustcon",
-    "version": "0.1.0-beta",
+    "version": "0.2.0-beta",
     "githubUrl": "https://github.com/RustCONxyz/mobile",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
