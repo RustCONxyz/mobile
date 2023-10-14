@@ -3,7 +3,7 @@ import { View, TouchableOpacity } from "react-native";
 import { BottomModal, SlideAnimation, ModalContent } from "react-native-modals";
 import { Image } from "expo-image";
 import { MaterialCommunityIcons, FontAwesome5, Ionicons } from "@expo/vector-icons";
-import { Text, Separator } from "../../components/Themed";;
+import { Text, Separator } from "../../components/Themed";
 import openExternalLink from "../../utils/openExternalLink";
 import ServerPlayer from "../../interfaces/ServerPlayer";
 
