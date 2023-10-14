@@ -6,6 +6,7 @@
   "author": "Kopter",
   "main": "expo-router/entry",
   "scripts": {
+    "ts:check": "tsc",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios"
@@ -53,6 +54,7 @@
     "@babel/core": "^7.20.0",
     "@types/d3-scale": "^4.0.3",
     "@types/react-native-modals": "^0.22.0",
+    "@types/url-parse": "^1.4.9",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "eslint": "^8.50.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
