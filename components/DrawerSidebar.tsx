@@ -6,7 +6,7 @@ import { useAppDispatch } from "../hooks/redux";
 import buildWebSocketAction from "../store/websocket/actions";
 import * as websocketActions from "../store/websocket/actions";
 
-export default function Sidebar(props: DrawerContentComponentProps) {
+export default function DrawerSidebar(props: DrawerContentComponentProps) {
 
     const dispatch = useAppDispatch();
 
