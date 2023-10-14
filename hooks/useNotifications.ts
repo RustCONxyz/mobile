@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Platform } from "react-native";
 import * as Device from "expo-device";
 import * as Notifications from "expo-notifications";
-import { registerPushToken } from "../utils/notifications";
+import { registerPushToken } from "@/utils/notifications";
 
 Notifications.setNotificationHandler({
 

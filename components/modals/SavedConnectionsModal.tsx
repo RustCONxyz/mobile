@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { View, ScrollView, TouchableOpacity } from "react-native";
 import { BottomModal, SlideAnimation, ModalContent } from "react-native-modals";
 import { Ionicons } from "@expo/vector-icons";
-import { Text, Separator } from "../Themed";
-import * as Storage from "../../utils/storage/connections";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
+import { Text, Separator } from "@/components/Themed";
+import * as Storage from "@/utils/storage/connections";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 type SavedConnectionsModalProps = {
 

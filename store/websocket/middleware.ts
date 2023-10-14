@@ -1,6 +1,6 @@
 import type { Middleware, MiddlewareAPI } from "redux";
-import ReduxWebSocket from "./reduxWebSocket";
-import * as websocketActions from "./actions";
+import ReduxWebSocket from "@/store/websocket/ReduxWebSocket";
+import * as websocketActions from "@/store/websocket/actions";
 
 export default (): Middleware => {
 

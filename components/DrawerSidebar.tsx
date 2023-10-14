@@ -2,9 +2,9 @@ import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import { Image } from "expo-image";
 import { MaterialIcons, Ionicons } from "@expo/vector-icons";
 import type { DrawerContentComponentProps } from "@react-navigation/drawer";
-import { useAppDispatch } from "../hooks/redux";
-import buildWebSocketAction from "../store/websocket/actions";
-import * as websocketActions from "../store/websocket/actions";
+import { useAppDispatch } from "@/hooks/redux";
+import buildWebSocketAction from "@/store/websocket/actions";
+import * as websocketActions from "@/store/websocket/actions";
 
 export default function DrawerSidebar(props: DrawerContentComponentProps) {
 

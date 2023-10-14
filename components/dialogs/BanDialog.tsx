@@ -1,6 +1,6 @@
 import { memo, useState } from "react";
 import Dialog from "react-native-dialog";
-import ServerPlayer from "../../interfaces/ServerPlayer";
+import ServerPlayer from "@/interfaces/ServerPlayer";
 
 type BanDialogProps = {
 

@@ -1,5 +1,5 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import type { AppState } from "../store";
+import type { AppState } from "@/store/store";
 
 export const websocketSlice = createSlice({
 

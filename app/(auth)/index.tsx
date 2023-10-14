@@ -5,14 +5,14 @@ import { Link } from "expo-router";
 import { Image } from "expo-image";
 import { MaterialIcons } from "@expo/vector-icons";
 import { CheckBox } from "@rneui/themed";
-import { Text, PasswordInput, NumberInput, Separator } from "../../components/Themed";
-import FailedToConnect from "../../components/FailedToConnect";
-import SavedConnectionsModal from "../../components/modals/SavedConnectionsModal";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { selectIsConnecting } from "../../store/slices/websocket";
-import buildWebSocketAction from "../../store/websocket/actions";
-import * as websocketActions from "../../store/websocket/actions";
+import { Text, PasswordInput, NumberInput, Separator } from "@/components/Themed";
+import FailedToConnect from "@/components/FailedToConnect";
+import SavedConnectionsModal from "@/components/modals/SavedConnectionsModal";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
+import { useAppDispatch, useAppSelector } from "@/hooks/redux";
+import { selectIsConnecting } from "@/store/slices/websocket";
+import buildWebSocketAction from "@/store/websocket/actions";
+import * as websocketActions from "@/store/websocket/actions";
 
 const formDefaultValues = { serverIP: "", rconPort: "", rconPassword: "", saveInformation: false };
 
@@ -55,7 +55,7 @@ export default function LoginScreen() {
             </View>
             <View className="m-auto w-full">
                 <View className="flex flex-row justify-center items-center mb-12">
-                    <Image source={require("../../assets/images/logo.png")} className="w-12 h-12 mr-6" />
+                    <Image source={require("@/assets/images/logo.png")} className="w-12 h-12 mr-6" />
                     <Text className="text-center text-3xl font-bold">RustCON</Text>
                 </View>
                 <View className="px-12">

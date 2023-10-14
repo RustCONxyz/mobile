@@ -1,4 +1,4 @@
-import { getNotificationSettings } from "./storage/notifications";
+import { getNotificationSettings } from "@/utils/storage/notifications";
 
 export async function registerPushToken(token: string, platform: string, platformVersion: string) {
 

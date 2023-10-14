@@ -1,6 +1,6 @@
 import { Drawer } from "expo-router/drawer";
-import DrawerSidebar from "../../components/DrawerSidebar";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
+import DrawerSidebar from "@/components/DrawerSidebar";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 export default function TabLayout() {
 

@@ -2,9 +2,9 @@ import { View, ScrollView } from "react-native";
 import { useEffect, useReducer } from "react";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Constants from "expo-constants"
-import { Text, Link, Separator, Switch } from "../components/Themed";
-import ExternalLink from "../components/ExternalLink";
-import { getNotificationSettings, setNotificationSettings, type NotificationSettings } from "../utils/storage/notifications";
+import { Text, Link, Separator, Switch } from "@/components/Themed";
+import ExternalLink from "@/components/ExternalLink";
+import { getNotificationSettings, setNotificationSettings, type NotificationSettings } from "@/utils/storage/notifications";
 
 export default function SettingsScreen() {
 

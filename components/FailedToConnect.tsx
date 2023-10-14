@@ -1,8 +1,8 @@
 import { View, TouchableOpacity } from "react-native";
 import { Modal, ModalContent, ScaleAnimation } from "react-native-modals";
-import { Text } from "./Themed";
-import { useAppDispatch, useAppSelector } from "../hooks/redux";
-import { selectFailedToConnect, setFailedToConnect } from "../store/slices/websocket";
+import { Text } from "@/components/Themed";
+import { useAppDispatch, useAppSelector } from "@/hooks/redux";
+import { selectFailedToConnect, setFailedToConnect } from "@/store/slices/websocket";
 
 export default function FailedToConnect() {
 

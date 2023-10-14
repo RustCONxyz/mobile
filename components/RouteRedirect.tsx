@@ -1,7 +1,7 @@
 import { useEffect, type ReactElement } from "react";
 import { useRouter, useSegments } from "expo-router";
-import { useAppSelector } from "../hooks/redux"
-import { selectIsConnected } from "../store/slices/websocket";
+import { useAppSelector } from "@/hooks/redux"
+import { selectIsConnected } from "@/store/slices/websocket";
 
 type RouteRedirectProps = { children: ReactElement };
 

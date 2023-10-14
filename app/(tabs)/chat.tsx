@@ -1,11 +1,11 @@
 import { View, FlatList, TouchableOpacity } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { useState, useRef, useCallback } from "react";
-import { Text, TextInput, Separator } from "../../components/Themed";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { selectServerChat } from "../../store/slices/serverChat";
-import buildWebSocketAction from "../../store/websocket/actions";
-import * as websocketActions from "../../store/websocket/actions";
+import { Text, TextInput, Separator } from "@/components/Themed";
+import { useAppDispatch, useAppSelector } from "@/hooks/redux";
+import { selectServerChat } from "@/store/slices/serverChat";
+import buildWebSocketAction from "@/store/websocket/actions";
+import * as websocketActions from "@/store/websocket/actions";
 
 type ChatInputProps = { onSubmit: (inputText: string) => void, onFocus: () => void };
 
