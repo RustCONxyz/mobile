@@ -63,7 +63,13 @@ export default function LoginScreen() {
                     <Controller
                         control={control}
                         render={({ field: { onChange, onBlur, value } }) =>
-                            <NumberInput className="mb-6" onBlur={onBlur} onChangeText={value => onChange(value)} value={value} editable={!isConnecting} />
+                            <NumberInput
+                                className="mb-6"
+                                onBlur={onBlur}
+                                onChangeText={onChange}
+                                value={value}
+                                editable={!isConnecting}
+                            />
                         }
                         name="serverIP"
                         rules={{ required: true, pattern: { value: /^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$/, message: "Invalid IP Address" } }}
@@ -72,7 +78,13 @@ export default function LoginScreen() {
                     <Controller
                         control={control}
                         render={({ field: { onChange, onBlur, value } }) =>
-                            <NumberInput className="mb-6" onBlur={onBlur} onChangeText={value => onChange(value)} value={value} editable={!isConnecting} />
+                            <NumberInput
+                                className="mb-6"
+                                onBlur={onBlur}
+                                onChangeText={onChange}
+                                value={value}
+                                editable={!isConnecting}
+                            />
                         }
                         name="rconPort"
                         rules={{ required: true }}
@@ -81,7 +93,13 @@ export default function LoginScreen() {
                     <Controller
                         control={control}
                         render={({ field: { onChange, onBlur, value } }) =>
-                            <PasswordInput className="mb-6" onBlur={onBlur} onChangeText={value => onChange(value)} value={value} editable={!isConnecting} />
+                            <PasswordInput 
+                                className="mb-6" 
+                                onBlur={onBlur} 
+                                onChangeText={onChange} 
+                                value={value} 
+                                editable={!isConnecting} 
+                            />
                         }
                         name="rconPassword"
                         rules={{ required: true }}
