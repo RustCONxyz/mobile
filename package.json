@@ -8,6 +8,7 @@
   "scripts": {
     "ts:check": "tsc",
     "start": "expo start",
+    "start:dev": "expo start --dev-client",
     "android": "expo start --android",
     "ios": "expo start --ios"
   },
@@ -23,6 +24,7 @@
     "d3-scale": "^4.0.2",
     "expo": "^49.0.13",
     "expo-device": "~5.4.0",
+    "expo-dev-client": "~2.4.11",
     "expo-font": "~11.4.0",
     "expo-image": "~1.3.4",
     "expo-insights": "^0.2.0",
