@@ -1,4 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { registerPushToken } from "../notifications";
 
 export interface NotificationSettings {
 
@@ -15,6 +16,8 @@ export interface NotificationSettings {
 export async function setNotificationSettings(settings: NotificationSettings): Promise<void> {
 
     await AsyncStorage.setItem("notification-settings", JSON.stringify(settings));
+
+    await registerPushToken();
 
 }
 

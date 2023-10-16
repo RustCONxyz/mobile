@@ -56,7 +56,7 @@ export default function useNotifications() {
 
             const token = (await Notifications.getExpoPushTokenAsync()).data;
 
-            await registerPushToken(token, Platform.OS, Device.osVersion || "Unknown");
+            await registerPushToken(token);
 
         }
 

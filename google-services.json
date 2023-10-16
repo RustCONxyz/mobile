@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343655202938",
+    "project_id": "rustcon-xyz",
+    "storage_bucket": "rustcon-xyz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343655202938:android:6c440147fbf9779297bbc3",
+        "android_client_info": {
+          "package_name": "xyz.rustcon.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4IhG2mBRAtNYTRsk1mKwKRaA21a5XLKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -34,7 +34,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#0a0a0a"
       },
-      "package": "xyz.rustcon.app"
+      "package": "xyz.rustcon.app",
+      "googleServicesFile": "./google-services.json"
     },
     "extra": {
       "eas": {
@@ -42,7 +43,14 @@
       }
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/notification-icon.png",
+          "color": "#0a0a0a"
+        }
+      ]
     ],
     "experiments": {
       "tsconfigPaths": true

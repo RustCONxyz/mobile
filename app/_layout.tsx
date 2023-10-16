@@ -15,7 +15,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
 
-    //useNotifications();
+    useNotifications();
 
     const isLoadingComplete = useCachedResources();
 
