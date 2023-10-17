@@ -51,7 +51,7 @@ export async function getServerPassword(connection: string): Promise<string | nu
 
 }
 
-export async function removeAllServers() {
+export async function removeAllServers(): Promise<void> {
 
     const allServers = await getAllServers();
 
@@ -65,7 +65,7 @@ export async function removeAllServers() {
 
 }
 
-export async function removeServer(connection: string) {
+export async function removeServer(connection: string): Promise<void> {
 
     const allServers = await getAllServers();
 
