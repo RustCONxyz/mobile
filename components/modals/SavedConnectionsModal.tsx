@@ -85,12 +85,12 @@ export default function SavedConnectionsModal({ isVisible, closeModal, handleCon
                                     <Text>{connection.serverName}</Text>
                                     <Text>{connection.connection}</Text>
                                 </TouchableOpacity>
-                                <TouchableOpacity className="border-2 border-red-500 rounded-md p-4" onPress={() => handleDelete(connection.connection)}>
+                                <TouchableOpacity className="border-2 border-red-600 rounded-md p-4" onPress={() => handleDelete(connection.connection)}>
                                     <Ionicons name="md-trash-outline" size={24} color="#ffffff" />
                                 </TouchableOpacity>
                             </View>
                         ))}
-                        <TouchableOpacity className="mb-4 flex flex-row justify-center items-center border-2 border-red-500 rounded-md text-center p-4" onPress={handleClear}>
+                        <TouchableOpacity className="mb-4 flex flex-row justify-center items-center border-2 border-red-600 rounded-md text-center p-4" onPress={handleClear}>
                             <Text className="mr-4">Clear All</Text>
                             <Ionicons name="md-trash-outline" size={24} color="#ffffff" />
                         </TouchableOpacity>
