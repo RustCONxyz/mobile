@@ -3,13 +3,15 @@ import { registerPushToken } from "../notifications";
 
 export interface NotificationSettings {
 
-    client: boolean;
+    clientUpdates: boolean;
 
-    server: boolean;
+    serverUpdates: boolean;
 
-    oxide: boolean;
+    oxideUpdates: boolean;
 
-    carbon: boolean;
+    carbonUpdates: boolean;
+
+    protocolUpdates: boolean;
 
 }
 
@@ -31,7 +33,19 @@ export async function getNotificationSettings(): Promise<NotificationSettings> {
 
     }
 
-    const defaultSettings = { client: true, server: true, oxide: true, carbon: true };
+    const defaultSettings = {
+
+        clientUpdates: true,
+
+        serverUpdates: true,
+
+        oxideUpdates: true,
+
+        carbonUpdates: true,
+
+        protocolUpdates: true
+
+    };
 
     await setNotificationSettings(defaultSettings);
 

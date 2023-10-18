@@ -16,7 +16,7 @@ export default function SettingsScreen() {
 
         return settings;
 
-    }, { client: true, server: true, oxide: true, carbon: true });
+    }, { clientUpdates: true, serverUpdates: true, oxideUpdates: true, carbonUpdates: true, protocolUpdates: true });
 
     useEffect(() => {
 
@@ -33,24 +33,28 @@ export default function SettingsScreen() {
                 </Link>
             </View>
             <Separator className="my-4" />
-            <View className="bg-zinc-900 rounded-md pb-2 pt-4 px-4">
+            <View className="bg-zinc-900 rounded-md p-4">
                 <Text className="text-xl">Notifications</Text>
                 <Separator className="mt-4 mb-2" />
                 <View className="mt-4 flex flex-row justify-between items-center">
                     <Text>Client Updates</Text>
-                    <Switch value={notifications.client} onChange={() => setNotifications({ client: !notifications.client })} />
+                    <Switch value={notifications.clientUpdates} onChange={() => setNotifications({ clientUpdates: !notifications.clientUpdates })} />
                 </View>
                 <View className="mt-4 flex flex-row justify-between items-center">
                     <Text>Server Updates</Text>
-                    <Switch value={notifications.server} onChange={() => setNotifications({ server: !notifications.server })} />
+                    <Switch value={notifications.serverUpdates} onChange={() => setNotifications({ serverUpdates: !notifications.serverUpdates })} />
                 </View>
                 <View className="mt-4 flex flex-row justify-between items-center">
                     <Text>Oxide Updates</Text>
-                    <Switch value={notifications.oxide} onChange={() => setNotifications({ oxide: !notifications.oxide })} />
+                    <Switch value={notifications.oxideUpdates} onChange={() => setNotifications({ oxideUpdates: !notifications.oxideUpdates })} />
                 </View>
                 <View className="mt-4 flex flex-row justify-between items-center">
                     <Text>Carbon Updates</Text>
-                    <Switch value={notifications.carbon} onChange={() => setNotifications({ carbon: !notifications.carbon })} />
+                    <Switch value={notifications.carbonUpdates} onChange={() => setNotifications({ carbonUpdates: !notifications.carbonUpdates })} />
+                </View>
+                <View className="mt-4 flex flex-row justify-between items-center">
+                    <Text>Protocol Updates</Text>
+                    <Switch value={notifications.protocolUpdates} onChange={() => setNotifications({ protocolUpdates: !notifications.protocolUpdates })} />
                 </View>
             </View>
             <Separator className="my-4" />
