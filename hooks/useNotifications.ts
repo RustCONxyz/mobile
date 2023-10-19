@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Platform } from "react-native";
 import * as Device from "expo-device";
 import * as Notifications from "expo-notifications";
-import { registerPushToken } from "../utils/notifications";
+import { registerPushToken } from "@/utils/notifications";
 
 Notifications.setNotificationHandler({
 
@@ -56,7 +56,7 @@ export default function useNotifications() {
 
             const token = (await Notifications.getExpoPushTokenAsync()).data;
 
-            await registerPushToken(token, Platform.OS, Device.osVersion || "Unknown");
+            await registerPushToken(token);
 
         }
 

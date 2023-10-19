@@ -1,12 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import createWebSocketMiddleware from "./websocket/middleware";
-import { serverInfoSlice } from "./slices/serverInfo";
-import { serverConsoleSlice } from "./slices/serverConsole";
-import { serverMapSlice } from "./slices/serverMap";
-import { serverChatSlice } from "./slices/serverChat";
-import { serverPlayersSlice } from "./slices/serverPlayers";
-import { serverBansSlice } from "./slices/serverBans";
-import { websocketSlice } from "./slices/websocket";
+import createWebSocketMiddleware from "@/store/websocket/middleware";
+import { serverInfoSlice } from "@/store/slices/serverInfo";
+import { serverConsoleSlice } from "@/store/slices/serverConsole";
+import { serverMapSlice } from "@/store/slices/serverMap";
+import { serverChatSlice } from "@/store/slices/serverChat";
+import { serverPlayersSlice } from "@/store/slices/serverPlayers";
+import { serverBansSlice } from "@/store/slices/serverBans";
+import { websocketSlice } from "@/store/slices/websocket";
 
 const store = configureStore({
 

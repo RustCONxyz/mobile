@@ -6,7 +6,7 @@
 import { View } from "react-native";
 import { Canvas, Group, Path, Skia, Text, useComputedValue, useFont } from "@shopify/react-native-skia";
 import { scaleLinear, scalePoint } from "d3-scale";
-import useWindowDimensions from "../hooks/useWindowDimensions";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 type LineChartProps = { data: Array<{ x: number, y: number }> };
 

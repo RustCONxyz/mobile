@@ -1,13 +1,13 @@
 import { View, FlatList, TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { useState, useEffect, useCallback } from "react";
-import { Text, Separator, TextInput } from "../../components/Themed";
-import SelectedBanModal from "../../components/modals/SelectedBanModal";
-import UnbanDialog from "../../components/dialogs/UnbanDialog";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { selectServerBans } from "../../store/slices/serverBans";
-import buildWebSocketAction from "../../store/websocket/actions";
-import * as websocketActions from "../../store/websocket/actions";
+import { Text, Separator, TextInput } from "@/components/Themed";
+import SelectedBanModal from "@/components/modals/SelectedBanModal";
+import UnbanDialog from "@/components/dialogs/UnbanDialog";
+import { useAppDispatch, useAppSelector } from "@/hooks/redux";
+import { selectServerBans } from "@/store/slices/serverBans";
+import buildWebSocketAction from "@/store/websocket/actions";
+import * as websocketActions from "@/store/websocket/actions";
 
 export default function BansScreen() {
 

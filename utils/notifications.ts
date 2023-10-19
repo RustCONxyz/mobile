@@ -1,6 +1,20 @@
-import { getNotificationSettings } from "./storage/notifications";
+import { getNotificationSettings } from "@/utils/storage/notifications";
 
-export async function registerPushToken(token: string, platform: string, platformVersion: string) {
+let expoPushToken: string | null = null;
+
+export async function registerPushToken(token?: string) {
+
+    if (!expoPushToken && !token) {
+
+        return;
+
+    }
+
+    if (!expoPushToken && token) {
+
+        expoPushToken = token;
+
+    }
 
     const notificationSettings = await getNotificationSettings();
 
@@ -10,9 +24,7 @@ export async function registerPushToken(token: string, platform: string, platfor
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            token,
-            platform,
-            platformVersion,
+            token: token || expoPushToken,
             settings: notificationSettings
         })
     });

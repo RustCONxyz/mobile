@@ -1,8 +1,8 @@
 import { View, ScrollView } from "react-native";
-import { Text, Separator } from "../../components/Themed";
-import LineChart from "../../components/LineChart";
-import { useAppSelector } from "../../hooks/redux";
-import { selectServerInfo } from "../../store/slices/serverInfo";
+import { Text, Separator } from "@/components/Themed";
+import LineChart from "@/components/LineChart";
+import { useAppSelector } from "@/hooks/redux";
+import { selectServerInfo } from "@/store/slices/serverInfo";
 
 export default function HomeScreen() {
 

@@ -28,7 +28,7 @@ export function NumberInput(props: DefaultTextInput["props"]) {
 
 export function PasswordInput(props: DefaultTextInput["props"]) {
 
-    return <TextInput secureTextEntry={true} {...props} />
+    return <TextInput secureTextEntry={true} autoCapitalize="none" {...props} />
 
 }
 

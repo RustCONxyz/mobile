@@ -2,9 +2,9 @@ import { memo } from "react";
 import { View, TouchableOpacity } from "react-native";
 import { BottomModal, SlideAnimation, ModalContent } from "react-native-modals";
 import { MaterialCommunityIcons, FontAwesome5 } from "@expo/vector-icons";
-import { Text, Separator } from "../../components/Themed";;
-import openExternalLink from "../../utils/openExternalLink";
-import ServerBan from "../../interfaces/ServerBan";
+import { Text, Separator } from "@/components/Themed";;
+import openExternalLink from "@/utils/openExternalLink";
+import ServerBan from "@/interfaces/ServerBan";
 
 type SelectedBanModalProps = {
 

@@ -4,18 +4,18 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Provider as ReduxProvider } from "react-redux";
 import { ModalPortal } from "react-native-modals";
 
-import store from "../store/store";
+import store from "@/store/store";
 
-import useNotifications from "../hooks/useNotifications";
-import useCachedResources from "../hooks/useCachedResources";
+import useNotifications from "@/hooks/useNotifications";
+import useCachedResources from "@/hooks/useCachedResources";
 
-import RouteRedirect from "../components/RouteRedirect";
+import RouteRedirect from "@/components/RouteRedirect";
 
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
 
-    //useNotifications();
+    useNotifications();
 
     const isLoadingComplete = useCachedResources();
 

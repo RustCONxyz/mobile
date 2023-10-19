@@ -1,12 +1,12 @@
 import type { Dispatch, MiddlewareAPI } from "redux";
-import { setIsConnected, setIsConnecting, setFailedToConnect } from "../slices/websocket";
-import { setServerInfo } from "../slices/serverInfo";
-import { setServerConsole, addConsoleOutput } from "../slices/serverConsole";
-import { setServerMapType, setServerMapSeed, setServerMapSize } from "../slices/serverMap";
-import { setServerChat, addServerChatMessage } from "../slices/serverChat";
-import { setOnlinePlayers } from "../slices/serverPlayers";
-import { setServerBans } from "../slices/serverBans";
-import * as Storage from "../../utils/storage/connections";
+import { setIsConnected, setIsConnecting, setFailedToConnect } from "@/store/slices/websocket";
+import { setServerInfo } from "@/store/slices/serverInfo";
+import { setServerConsole, addConsoleOutput } from "@/store/slices/serverConsole";
+import { setServerMapType, setServerMapSeed, setServerMapSize } from "@/store/slices/serverMap";
+import { setServerChat, addServerChatMessage } from "@/store/slices/serverChat";
+import { setOnlinePlayers } from "@/store/slices/serverPlayers";
+import { setServerBans } from "@/store/slices/serverBans";
+import * as Storage from "@/utils/storage/connections";
 
 export default class ReduxWebSocket {
 

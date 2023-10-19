@@ -1,6 +1,6 @@
 import { memo, useState } from "react";
 import Dialog from "react-native-dialog";
-import IServerPlayer from "../../interfaces/ServerPlayer";
+import ServerPlayer from "@/interfaces/ServerPlayer";
 
 type BanDialogProps = {
 
@@ -8,7 +8,7 @@ type BanDialogProps = {
 
     closeDialog: () => void,
 
-    playerInfo: IServerPlayer,
+    playerInfo: ServerPlayer,
 
     sendRCONCommand: (command: string) => void
 

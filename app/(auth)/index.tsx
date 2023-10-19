@@ -5,14 +5,14 @@ import { Link } from "expo-router";
 import { Image } from "expo-image";
 import { MaterialIcons } from "@expo/vector-icons";
 import { CheckBox } from "@rneui/themed";
-import { Text, PasswordInput, NumberInput, Separator } from "../../components/Themed";
-import FailedToConnect from "../../components/FailedToConnect";
-import SavedConnectionsModal from "../../components/modals/SavedConnectionsModal";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { selectIsConnecting } from "../../store/slices/websocket";
-import buildWebSocketAction from "../../store/websocket/actions";
-import * as websocketActions from "../../store/websocket/actions";
+import { Text, PasswordInput, NumberInput, Separator } from "@/components/Themed";
+import FailedToConnect from "@/components/FailedToConnect";
+import SavedConnectionsModal from "@/components/modals/SavedConnectionsModal";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
+import { useAppDispatch, useAppSelector } from "@/hooks/redux";
+import { selectIsConnecting } from "@/store/slices/websocket";
+import buildWebSocketAction from "@/store/websocket/actions";
+import * as websocketActions from "@/store/websocket/actions";
 
 const formDefaultValues = { serverIP: "", rconPort: "", rconPassword: "", saveInformation: false };
 
@@ -55,7 +55,7 @@ export default function LoginScreen() {
             </View>
             <View className="m-auto w-full">
                 <View className="flex flex-row justify-center items-center mb-12">
-                    <Image source={require("../../assets/images/logo.png")} className="w-12 h-12 mr-6" />
+                    <Image source={require("@/assets/images/logo.png")} className="w-12 h-12 mr-6" />
                     <Text className="text-center text-3xl font-bold">RustCON</Text>
                 </View>
                 <View className="px-12">
@@ -63,7 +63,13 @@ export default function LoginScreen() {
                     <Controller
                         control={control}
                         render={({ field: { onChange, onBlur, value } }) =>
-                            <NumberInput className="mb-6" onBlur={onBlur} onChangeText={value => onChange(value)} value={value} editable={!isConnecting} />
+                            <NumberInput
+                                className="mb-6"
+                                onBlur={onBlur}
+                                onChangeText={onChange}
+                                value={value}
+                                editable={!isConnecting}
+                            />
                         }
                         name="serverIP"
                         rules={{ required: true, pattern: { value: /^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$/, message: "Invalid IP Address" } }}
@@ -72,7 +78,13 @@ export default function LoginScreen() {
                     <Controller
                         control={control}
                         render={({ field: { onChange, onBlur, value } }) =>
-                            <NumberInput className="mb-6" onBlur={onBlur} onChangeText={value => onChange(value)} value={value} editable={!isConnecting} />
+                            <NumberInput
+                                className="mb-6"
+                                onBlur={onBlur}
+                                onChangeText={onChange}
+                                value={value}
+                                editable={!isConnecting}
+                            />
                         }
                         name="rconPort"
                         rules={{ required: true }}
@@ -81,7 +93,13 @@ export default function LoginScreen() {
                     <Controller
                         control={control}
                         render={({ field: { onChange, onBlur, value } }) =>
-                            <PasswordInput className="mb-6" onBlur={onBlur} onChangeText={value => onChange(value)} value={value} editable={!isConnecting} />
+                            <PasswordInput 
+                                className="mb-6" 
+                                onBlur={onBlur} 
+                                onChangeText={onChange} 
+                                value={value} 
+                                editable={!isConnecting} 
+                            />
                         }
                         name="rconPassword"
                         rules={{ required: true }}

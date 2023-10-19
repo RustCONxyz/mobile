@@ -1,6 +1,6 @@
-import Drawer from "../../navigation/Drawer";
-import Sidebar from "../../navigation/Sidebar";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
+import { Drawer } from "expo-router/drawer";
+import DrawerSidebar from "@/components/DrawerSidebar";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 export default function TabLayout() {
 
@@ -8,7 +8,7 @@ export default function TabLayout() {
 
     return (
         <Drawer
-            drawerContent={Sidebar}
+            drawerContent={DrawerSidebar}
             screenOptions={{
                 headerShown: false,
                 swipeEnabled: true,

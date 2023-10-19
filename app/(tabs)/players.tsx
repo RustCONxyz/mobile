@@ -1,14 +1,14 @@
 import { View, FlatList, TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { useState, useEffect, useCallback } from "react";
-import { Text, Separator, TextInput } from "../../components/Themed";
-import SelectedPlayerModal from "../../components/modals/SelectedPlayerModal";
-import KickDialog from "../../components/dialogs/KickDialog";
-import BanDialog from "../../components/dialogs/BanDialog";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { selectOnlinePlayers } from "../../store/slices/serverPlayers";
-import buildWebSocketAction from "../../store/websocket/actions";
-import * as websocketActions from "../../store/websocket/actions";
+import { Text, Separator, TextInput } from "@/components/Themed";
+import SelectedPlayerModal from "@/components/modals/SelectedPlayerModal";
+import KickDialog from "@/components/dialogs/KickDialog";
+import BanDialog from "@/components/dialogs/BanDialog";
+import { useAppDispatch, useAppSelector } from "@/hooks/redux";
+import { selectOnlinePlayers } from "@/store/slices/serverPlayers";
+import buildWebSocketAction from "@/store/websocket/actions";
+import * as websocketActions from "@/store/websocket/actions";
 
 export default function PlayersScreen() {
 

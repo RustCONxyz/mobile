@@ -1,11 +1,11 @@
 import { View, FlatList, TouchableOpacity } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { useState, useRef, useCallback } from "react";
-import { Text, TextInput } from "../../components/Themed";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { selectServerConsole } from "../../store/slices/serverConsole";
-import buildWebSocketAction from "../../store/websocket/actions";
-import * as websocketActions from "../../store/websocket/actions";
+import { Text, TextInput } from "@/components/Themed";
+import { useAppDispatch, useAppSelector } from "@/hooks/redux";
+import { selectServerConsole } from "@/store/slices/serverConsole";
+import buildWebSocketAction from "@/store/websocket/actions";
+import * as websocketActions from "@/store/websocket/actions";
 
 type ConsoleInputProps = { onSubmit: (inputText: string) => void, onFocus: () => void };
 

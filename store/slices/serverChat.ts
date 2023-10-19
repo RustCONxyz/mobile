@@ -1,6 +1,6 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import type { AppState } from "../store";
-import ChatMessage from "../../interfaces/ChatMessage";
+import type { AppState } from "@/store/store";
+import ChatMessage from "@/interfaces/ChatMessage";
 
 export const serverChatSlice = createSlice({
 

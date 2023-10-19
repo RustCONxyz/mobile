@@ -1,6 +1,6 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import type { AppState } from "../store";
-import ServerMap from "../../interfaces/ServerMap";
+import type { AppState } from "@/store/store";
+import ServerMap from "@/interfaces/ServerMap";
 
 export const serverMapSlice = createSlice({
 

@@ -1,7 +1,7 @@
 import type React from "react";
 import { Platform } from "react-native";
 import * as WebBrowser from "expo-web-browser";
-import { Link } from "./Themed";
+import { Link } from "@/components/Themed";
 
 export default function ExternalLink(props: React.ComponentProps<typeof Link>) {
 
