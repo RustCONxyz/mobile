@@ -1,9 +1,9 @@
-import { useEffect, type ReactElement } from "react";
+import { useEffect, type ReactNode } from "react";
 import { useRouter, useSegments } from "expo-router";
 import { useAppSelector } from "@/hooks/redux"
 import { selectIsConnected } from "@/store/slices/websocket";
 
-type RouteRedirectProps = { children: ReactElement };
+type RouteRedirectProps = { children: ReactNode };
 
 export default function RouteRedirect({ children }: RouteRedirectProps) {
 
