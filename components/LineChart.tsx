@@ -1,6 +1,6 @@
 /**
  * Adapted code from @vladanyes React Native Skia Charts package.
- * Inspired by https://github.com/vladanyes/react-native-skia-charts.
+ * Check https://github.com/vladanyes/react-native-skia-charts for the original code.
  */
 
 import { View } from "react-native";
