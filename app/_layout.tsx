@@ -17,7 +17,7 @@ export default function RootLayout() {
 
     useNotifications();
 
-    const isLoadingComplete = useCachedResources();
+    useCachedResources();
 
     return (
         <ReduxProvider store={store}>
