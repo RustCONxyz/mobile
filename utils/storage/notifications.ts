@@ -52,3 +52,11 @@ export async function getNotificationSettings(): Promise<NotificationSettings> {
     return defaultSettings;
 
 }
+
+export async function resetNotificationSettings(): Promise<void> {
+
+    await AsyncStorage.removeItem("notification-settings");
+
+    await registerPushToken();
+
+}

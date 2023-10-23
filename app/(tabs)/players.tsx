@@ -1,6 +1,6 @@
+import { useState, useEffect, useCallback } from "react";
 import { View, FlatList, TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
-import { useState, useEffect, useCallback } from "react";
 import { Text, Separator, TextInput } from "@/components/Themed";
 import SelectedPlayerModal from "@/components/modals/SelectedPlayerModal";
 import KickDialog from "@/components/dialogs/KickDialog";

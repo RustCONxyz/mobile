@@ -1,6 +1,6 @@
+import { useState, useRef, useCallback } from "react";
 import { View, FlatList, TouchableOpacity } from "react-native";
 import { Feather } from "@expo/vector-icons";
-import { useState, useRef, useCallback } from "react";
 import { Text, TextInput } from "@/components/Themed";
 import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { selectServerConsole } from "@/store/slices/serverConsole";

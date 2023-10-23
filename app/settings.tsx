@@ -1,5 +1,5 @@
-import { View, ScrollView } from "react-native";
 import { useEffect, useReducer } from "react";
+import { View, ScrollView } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Constants from "expo-constants"
 import { Text, Link, Separator, Switch } from "@/components/Themed";
