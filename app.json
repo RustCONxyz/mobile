@@ -3,12 +3,16 @@
     "name": "RustCON",
     "owner": "kopter",
     "slug": "rustcon",
-    "version": "0.3.1-beta",
+    "version": "0.3.2-beta",
     "githubUrl": "https://github.com/RustCONxyz/mobile",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
@@ -44,6 +48,14 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
       [
         "expo-notifications",
         {

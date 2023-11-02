@@ -12,7 +12,7 @@ export default class ReduxWebSocket {
 
     private websocket: WebSocket | null = null;
 
-    private refreshId: NodeJS.Timer | null = null;
+    private refreshTimer: NodeJS.Timeout | null = null;
 
     private pendingMessages: any[] = [];
 
@@ -117,13 +117,13 @@ export default class ReduxWebSocket {
 
         this.sendWebSocket("console.tail 512", 9008);
 
-        this.refreshId = setInterval(() => {
+        this.refreshTimer = setInterval(() => {
 
             if (this.websocket?.readyState === 3) {
 
-                clearInterval(this.refreshId!);
+                clearInterval(this.refreshTimer!);
 
-                this.refreshId = null;
+                this.refreshTimer = null;
 
                 return;
 
@@ -355,9 +355,9 @@ export default class ReduxWebSocket {
 
         if (this.websocket) {
 
-            clearInterval(this.refreshId!);
+            clearInterval(this.refreshTimer!);
 
-            this.refreshId = null;
+            this.refreshTimer = null;
 
             dispatch(setIsConnected(false));
 
