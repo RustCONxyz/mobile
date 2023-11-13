@@ -7,7 +7,7 @@
     "githubUrl": "https://github.com/RustCONxyz/mobile",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "rustcon",
     "userInterfaceStyle": "automatic",
     "platforms": [
       "ios",
