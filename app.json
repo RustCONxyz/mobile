@@ -65,6 +65,7 @@
       ]
     ],
     "experiments": {
+      "typedRoutes": true,
       "tsconfigPaths": true
     }
   }
