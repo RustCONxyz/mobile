@@ -4,7 +4,7 @@
  */
 
 import { View } from "react-native";
-import { Canvas, Group, Path, Skia, Text, useComputedValue, useFont } from "@shopify/react-native-skia";
+import { useFont, useComputedValue, Canvas, Group, Path, Skia, Text } from "@shopify/react-native-skia";
 import { scaleLinear, scalePoint } from "d3-scale";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 
