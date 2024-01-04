@@ -4,6 +4,6 @@ export default function useWindowDimensions() {
 
     const { width, height } = Dimensions.get("window");
 
-    return { width, height, statusbarHeight: StatusBar.currentHeight };
+    return { width, height, statusbarHeight: StatusBar.currentHeight ?? 0 };
 
 }

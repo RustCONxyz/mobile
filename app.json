@@ -3,11 +3,11 @@
     "name": "RustCON",
     "owner": "kopter",
     "slug": "rustcon",
-    "version": "0.3.2-beta",
+    "version": "0.4.0-beta",
     "githubUrl": "https://github.com/RustCONxyz/mobile",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "rustcon",
     "userInterfaceStyle": "automatic",
     "platforms": [
       "ios",
@@ -65,6 +65,7 @@
       ]
     ],
     "experiments": {
+      "typedRoutes": true,
       "tsconfigPaths": true
     }
   }

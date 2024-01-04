@@ -6,9 +6,6 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "env": {
-        "EXPO_PUBLIC_API_URL": "http://localhost:3000"
-      },
       "ios": {
         "resourceClass": "m-medium"
       },

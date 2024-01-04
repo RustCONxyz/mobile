@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
 import { View, ScrollView, TouchableOpacity } from "react-native";
 import { BottomModal, SlideAnimation, ModalContent } from "react-native-modals";
 import { Ionicons } from "@expo/vector-icons";
 import { Text, Separator } from "@/components/Themed";
-import * as Storage from "@/utils/storage/connections";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
+import useSavedConnections from "@/hooks/useSavedConnections";
 
 type SavedConnectionsModalProps = {
 
@@ -20,47 +19,19 @@ export default function SavedConnectionsModal({ isVisible, closeModal, handleCon
 
     const { height } = useWindowDimensions();
 
-    const [savedConnections, setSavedConnections] = useState<Storage.ServerDetails[]>([]);
-
-    useEffect(() => {
-
-        Storage.getAllServers().then((connections) => setSavedConnections(connections));
-
-    }, []);
+    const { savedConnections, getSavedConnectionPassword, removeSavedConnection } = useSavedConnections();
 
     async function handleClick(connection: string) {
 
-        const password = await Storage.getServerPassword(connection);
+        const password = await getSavedConnectionPassword(connection);
 
         if (!password) {
-
-            const connections = await Storage.getAllServers();
-
-            setSavedConnections(connections);
 
             return;
 
         }
 
         handleConnect(connection, password, false);
-
-    }
-
-    async function handleDelete(connection: string) {
-
-        await Storage.removeServer(connection);
-
-        const connections = await Storage.getAllServers();
-
-        setSavedConnections(connections);
-
-    }
-
-    function handleClear() {
-
-        Storage.removeAllServers();
-
-        setSavedConnections([]);
 
     }
 
@@ -85,15 +56,11 @@ export default function SavedConnectionsModal({ isVisible, closeModal, handleCon
                                     <Text>{connection.serverName}</Text>
                                     <Text>{connection.connection}</Text>
                                 </TouchableOpacity>
-                                <TouchableOpacity className="border-2 border-red-600 rounded-md p-4" onPress={() => handleDelete(connection.connection)}>
+                                <TouchableOpacity className="border-2 border-red-600 rounded-md p-4" onPress={() => removeSavedConnection(connection.connection)}>
                                     <Ionicons name="md-trash-outline" size={24} color="#ffffff" />
                                 </TouchableOpacity>
                             </View>
                         ))}
-                        <TouchableOpacity className="mb-4 flex flex-row justify-center items-center border-2 border-red-600 rounded-md text-center p-4" onPress={handleClear}>
-                            <Text className="mr-4">Clear All</Text>
-                            <Ionicons name="md-trash-outline" size={24} color="#ffffff" />
-                        </TouchableOpacity>
                     </ScrollView>
                 )}
             </ModalContent>

@@ -1,4 +1,4 @@
-import { getNotificationSettings } from "@/utils/storage/notifications";
+import { getNotificationSettings } from "@/lib/storage";
 
 let expoPushToken: string | null = null;
 
@@ -16,7 +16,7 @@ export async function registerPushToken(token?: string) {
 
     }
 
-    const notificationSettings = await getNotificationSettings();
+    const notificationSettings = getNotificationSettings();
 
     const response = await fetch(`${process.env.EXPO_PUBLIC_API_URL}/push-token`, {
         method: "POST",
