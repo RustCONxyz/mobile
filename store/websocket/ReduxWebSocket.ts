@@ -6,7 +6,7 @@ import { setServerMapType, setServerMapSeed, setServerMapSize } from "@/store/sl
 import { setServerChat, addServerChatMessage } from "@/store/slices/serverChat";
 import { setOnlinePlayers } from "@/store/slices/serverPlayers";
 import { setServerBans } from "@/store/slices/serverBans";
-import * as Storage from "@/utils/storage/connections";
+import { addSavedConnection } from "@/lib/storage";
 
 export default class ReduxWebSocket {
 
@@ -33,7 +33,7 @@ export default class ReduxWebSocket {
 
             if (payload.saveInformation) {
 
-                Storage.addServer(payload.connection, payload.rconPassword);
+                addSavedConnection(payload.connection, payload.rconPassword);
 
             }
 
