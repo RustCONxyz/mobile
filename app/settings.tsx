@@ -1,6 +1,6 @@
 import { View, ScrollView } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import Constants from "expo-constants"
+import * as Application from "expo-application";
 import useNotificationSettings from "@/hooks/useNotificationSettings";
 import { Text, Link, Separator, Switch } from "@/components/Themed";
 import ExternalLink from "@/components/ExternalLink";
@@ -63,7 +63,7 @@ export default function SettingsScreen() {
                 </View>
                 <View>
                     <Text className="text-center">RustCON is an open source project</Text>
-                    <Text className="mt-2 mb-8 text-xs text-center">{Constants.expoConfig?.version ?? "Unknown Version"}</Text>
+                    <Text className="mt-2 mb-8 text-xs text-center">{Application.nativeApplicationVersion ?? "Unknown Version"}</Text>
                 </View>
             </View>
         </ScrollView>

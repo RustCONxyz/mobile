@@ -22,6 +22,7 @@
     "@shopify/react-native-skia": "0.1.196",
     "d3-scale": "^4.0.2",
     "expo": "^49.0.0",
+    "expo-application": "~5.3.0",
     "expo-build-properties": "~0.8.3",
     "expo-dev-client": "~2.4.12",
     "expo-device": "~5.4.0",
