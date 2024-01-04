@@ -11,6 +11,7 @@ npm-debug.*
 web-build/
 *.apk
 .env*.local
+%ProgramData%/
 
 # macOS
 .DS_Store
