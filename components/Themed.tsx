@@ -1,6 +1,5 @@
 import { Text as DefaultText, TextInput as DefaultTextInput, View as DefaultView, Switch as DefaultSwitch } from "react-native";
 import { Link as DefaultLink } from "expo-router";
-import type { LinkProps } from "expo-router/build/link/Link";
 
 export function Text(props: DefaultText["props"]) {
 
@@ -54,7 +53,7 @@ export function Switch(props: DefaultSwitch["props"]) {
 
 }
 
-export function Link(props: LinkProps) {
+export function Link(props: any) {
 
     return <DefaultLink className="text-white font-medium" {...props} />
 
