@@ -1,6 +1,6 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { AppState } from "@/store/store";
-import ServerPlayer from "@/interfaces/ServerPlayer";
+import ServerPlayer from "@/types/ServerPlayer";
 
 export const serverPlayersSlice = createSlice({
 

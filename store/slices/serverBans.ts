@@ -1,6 +1,6 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { AppState } from "@/store/store";
-import ServerBan from "@/interfaces/ServerBan";
+import ServerBan from "@/types/ServerBan";
 
 export const serverBansSlice = createSlice({
 

@@ -4,7 +4,7 @@ import { BottomModal, SlideAnimation, ModalContent } from "react-native-modals";
 import { MaterialCommunityIcons, FontAwesome5 } from "@expo/vector-icons";
 import { Text, Separator } from "@/components/Themed";;
 import openExternalLink from "@/utils/openExternalLink";
-import ServerBan from "@/interfaces/ServerBan";
+import ServerBan from "@/types/ServerBan";
 
 type SelectedBanModalProps = {
 
