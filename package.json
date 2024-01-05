@@ -1,6 +1,6 @@
 {
   "name": "rustcon-mobile",
-  "version": "0.4.0-beta",
+  "version": "0.4.1-beta",
   "description": "RustCON - Mobile App",
   "license": "GNU GPLv3",
   "author": "Kopter",
@@ -24,6 +24,7 @@
     "expo": "^49.0.0",
     "expo-application": "~5.3.0",
     "expo-build-properties": "~0.8.3",
+    "expo-constants": "~14.4.2",
     "expo-dev-client": "~2.4.12",
     "expo-device": "~5.4.0",
     "expo-font": "~11.4.0",

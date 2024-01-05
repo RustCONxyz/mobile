@@ -1,6 +1,6 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { AppState } from "@/store/store";
-import ConsoleOutput from "@/interfaces/ConsoleOutput";
+import ConsoleOutput from "@/types/ConsoleOutput";
 
 export const serverConsoleSlice = createSlice({
 

@@ -1,6 +1,6 @@
 import { memo } from "react";
 import Dialog from "react-native-dialog";
-import ServerBan from "@/interfaces/ServerBan";
+import ServerBan from "@/types/ServerBan";
 
 type UnbanDialogProps = {
 
